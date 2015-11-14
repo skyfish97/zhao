@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout android:id="@id/relative_top" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="58.5dip">
+        <TextView android:textSize="19.0sp" android:id="@+id/gaokaobaike_title" android:paddingBottom="3.0dip"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginRight="5.0dip" android:text="标题" android:layout_centerVertical="true"
+                  android:textColor="@color/black"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12dp" android:textColor="@color/gray" android:id="@+id/gaokaobaike_content"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容" android:layout_alignParentRight="false"
+                      android:layout_marginBottom="5dp" android:singleLine="false" android:ellipsize="end"
+                      android:lines="3"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+                >
+            <TextView android:textSize="12dp" android:textColor="@color/gray" android:id="@+id/gaokaobaike_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="2015-12-12-12：20" android:layout_alignParentRight="true" android:layout_marginRight="100dp"
+                      android:layout_marginBottom="5dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@color/middlegray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

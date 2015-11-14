@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/skyblue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/feedback" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/navreturnbtn" android:layout_weight="1.0" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_register_title" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:text="@string/tab_me" android:layout_weight="7.0" />
+        <Button android:textSize="18.5sp" android:textColor="@color/skyblue" android:gravity="center" android:background="@drawable/navbtnbg" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:text="@string/register" />
+    </LinearLayout>
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_block1" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <RelativeLayout android:id="@id/layout_wo_bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <RelativeLayout android:id="@id/rl_order_search" android:paddingLeft="4.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                    <ImageView android:id="@id/iv_i_orderform_icon" android:background="@drawable/head_anroid" android:layout_width="84.5dip" android:layout_height="84.5dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_i_orderform_icon" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     />
+                            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@+id/me_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_block2" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="30dp" android:layout_marginTop="1.0dip"
+                              android:layout_below="@id/rl_order_search" />
+                <RelativeLayout android:background="@drawable/tab_me_itempress" android:id="@id/rl_for_share" android:paddingLeft="4.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+                                android:layout_below="@id/ll_block2" android:onClick="fenxiang">
+                    <ImageView android:id="@id/i_share_icon" android:background="@drawable/i_share_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_to_share" android:layout_toRightOf="@id/i_share_icon" android:layout_centerVertical="true" />
+                    <ImageView android:background="@drawable/orientedbtn" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_suggestion" android:paddingLeft="4.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/rl_for_share">
+                    <ImageView android:id="@id/iv_i_feedback_icon" android:background="@drawable/i_feedback_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_feedback" android:layout_toRightOf="@id/iv_i_feedback_icon" android:layout_centerVertical="true" />
+                    <ImageView android:background="@drawable/orientedbtn" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_about_sxw" android:paddingLeft="4.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/rl_suggestion"
+                                android:onClick="about_gkbd">
+                    <ImageView android:id="@id/iv_i_about_icon" android:background="@drawable/i_about_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_about" android:layout_toRightOf="@id/iv_i_about_icon" android:layout_centerVertical="true" />
+                    <ImageView android:background="@drawable/orientedbtn" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_version_detack" android:paddingLeft="4.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/rl_about_sxw">
+                    <ImageView android:id="@id/iv_i_versions_icon" android:background="@drawable/i_versions_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_version_checking" android:layout_toRightOf="@id/iv_i_versions_icon" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_orientbtn" android:background="@drawable/orientedbtn" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_version_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/me_v1" android:layout_toLeftOf="@id/iv_orientbtn" android:layout_centerVertical="true" />
+                    <ImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

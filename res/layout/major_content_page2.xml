@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="业务培养目标："
+                          />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_yewupeiyangmubiao" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="业务培养要求："
+                       />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_yewupeiyangyaoqiu" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="主要课程：" android:id="@+id/textView9"/>
+                <TextView android:textSize="16.0sp" android:textColor="@color/black"
+                          android:id="@+id/tv_zhuyaokecheng" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主要实践性教学环节："
+                         />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_zhuyaoshijianhuanjie" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

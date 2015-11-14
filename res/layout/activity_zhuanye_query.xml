@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/skyblue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/major_query_fanhui" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/navreturnbtn" android:layout_weight="1.0"
+                   android:onClick="zhuanye_finsh"/>
+        <LinearLayout android:background="@drawable/btn" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="7.0"
+                      android:layout_marginRight="16dp">
+            <EditText android:textSize="20.0sp" android:textColor="@color/black" android:gravity="left|center" android:id="@+id/et_zhuanye_slect" android:background="@color/white" android:paddingLeft="8.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:singleLine="true" android:layout_weight="5.0" android:imeOptions="actionSearch" />
+            <ImageView android:layout_gravity="right|center" android:background="@color/lightblue"
+                       android:layout_width="1.0dip" android:layout_height="20dp" android:id="@+id/imageView14"
+                       android:layout_marginTop="1.5dp" android:layout_marginRight="3dp"/>
+            <Button android:textSize="18.5sp" android:textColor="@color/skyblue" android:gravity="center" android:id="@+id/btn_major_search" android:background="@drawable/navbtnbg" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="搜 索" android:layout_weight="1.5"
+                    android:onClick="zhuanye_select"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_major_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="没有要查询的数据！" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <soft.zzti.edu.cn.ruxuebaodian.autolistview.AutoListView
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:id="@+id/zhuanye_select_pull_refresh_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+        <ImageView android:id="@id/iv_show_major_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/loadalltips" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

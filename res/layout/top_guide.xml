@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/umeng_socialize_grid_divider_line"
+    android:orientation="vertical" >
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RadioButton android:textSize="16.0dip" android:textColor="@drawable/drawable_menu_textcolor3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_top_basic_information"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="基本信息" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="16.0dip" android:textColor="@drawable/drawable_menu_textcolor3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_top_major_general" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="专业概况" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="16.0dip" android:textColor="@drawable/drawable_menu_textcolor3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_top_open_university" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="开设院校" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="16.0dip" android:textColor="@drawable/drawable_menu_textcolor3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_top_enroll_count"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="录取人数" android:layout_weight="1.0" />
+                </RadioGroup>
+            </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    <!--<ImageView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView" android:background="@color/white"/>-->
+    <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" android:background="@color/white" >-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1" android:orientation="vertical" android:gravity="bottom">-->
+
+            <!--<TextView-->
+                    <!--android:id="@+id/tv_jibenxinxi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="基本信息"-->
+                    <!--android:layout_gravity="center_horizontal" android:textSize="16dp"-->
+                    <!--android:textColor="@color/black" android:enabled="true"/>-->
+            <!--<TextView android:id="@+id/tv_line1" android:layout_width="fill_parent"-->
+                      <!--android:layout_height="2dp"-->
+                      <!--android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"-->
+                      <!--android:shadowColor="@null"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical" android:gravity="bottom">-->
+
+            <!--<TextView-->
+                    <!--android:id="@+id/tv_zhuanyegaikuang"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="专业概况"-->
+                    <!--android:layout_gravity="center_horizontal" android:textSize="16dp"-->
+                    <!--android:textColor="@color/black"/>-->
+            <!--<TextView android:id="@+id/tv_line2" android:layout_width="fill_parent"-->
+                      <!--android:layout_height="2dp"-->
+                      <!--android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"-->
+                      <!--android:shadowColor="@null"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical" android:gravity="bottom">-->
+
+            <!--<TextView-->
+                    <!--android:id="@+id/tv_kaisheyuanxiao"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="开设院校"-->
+                    <!--android:layout_gravity="center_horizontal" android:textSize="16dp"-->
+                    <!--android:textColor="@color/black"/>-->
+            <!--<TextView android:id="@+id/tv_line3" android:layout_width="fill_parent"-->
+                      <!--android:layout_height="2dp"-->
+                      <!--android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"-->
+                      <!--android:background="@color/white" android:shadowColor="@null"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout android:id="@+id/layout_4" android:layout_width="0dp" android:layout_height="fill_parent"-->
+                      <!--android:layout_weight="1" android:orientation="vertical"-->
+                      <!--android:gravity="bottom">-->
+            <!--<TextView android:id="@+id/tv_luqurenshu" android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                      <!--android:text="录取人数" android:textSize="16dp" android:layout_gravity="center_horizontal"-->
+                      <!--android:textColor="@color/black"/>-->
+            <!--<TextView android:id="@+id/tv_line4" android:layout_width="fill_parent" android:layout_height="2dp"-->
+                      <!--android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"-->
+                      <!--android:shadowColor="@null"/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

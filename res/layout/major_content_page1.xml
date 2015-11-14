@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所属类别：" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv1_suoshuleibie" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学历层次：" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv1_xuelicengci" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专业名称：" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv1_zhuanyemingcheng" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开设院校数量："
+                         />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/ty1_kaisheyuanxiaoshuliang" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="授予学位："
+                          />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv1_shouyuxuewei" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="16.0sp" android:textColor="@color/black"
+                          android:id="@+id/textView12" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="学位"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

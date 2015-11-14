@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:text="清华"
+                  android:id="@+id/tv_xxname" android:textColor="@color/black"
+                  android:layout_weight="0.5"
+                  android:layout_margin="16dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:text="哲学"
+                  android:id="@+id/tv_zymc" android:textColor="@color/black"
+                  android:layout_weight="0.5" android:gravity="right"
+                  android:textSize="13dp" android:layout_margin="16dp"/>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1dp" android:src="@color/gray"/>
+</LinearLayout>

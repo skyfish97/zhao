@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout android:id="@+id/relative_top" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="58.5dip">
+        <TextView android:textSize="19.0sp" android:id="@+id/zylu_xxmz" android:paddingBottom="3.0dip"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginRight="5.0dip" android:text="东北大学" android:layout_centerVertical="true"
+                  android:textColor="@color/skyblue"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relative_bottom" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/tv_taddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专业名称：" />
+            <TextView android:textSize="13dp" android:textColor="@color/red" android:id="@+id/zylq_zymc" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="河南" android:layout_toRightOf="@id/tv_taddress" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8"
+                       >
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/tv_tkenengxing" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="招生地区："/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zylq_dq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2011" android:layout_toRightOf="@id/tv_tkenengxing" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/relativeLayout5" android:paddingLeft="8.0dip" android:paddingRight="8.0dip"
+                        android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zylu_wlk"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="615"
+                      android:layout_toRightOf="@+id/textView26" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/textView26"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文理科："/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/relative_second" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.9">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zylq_nf" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="615" android:layout_toRightOf="@id/tv_tfengshu"
+                      android:layout_alignParentRight="true"/>
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/tv_tfengshu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年份：" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/relativeLayout4" android:paddingLeft="8.0dip" android:paddingRight="8.0dip"
+                        android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/textView23"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录取批次："/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zylu_batch"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500"
+                      android:layout_toRightOf="@+id/textView23" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relativeLayout3" android:paddingLeft="8.0dip" android:paddingRight="8.0dip"
+                        android:paddingBottom="16.0dip" android:layout_width="0.0dip"
+                        android:layout_height="wrap_content" android:layout_weight="0.9">
+            <TextView android:textSize="13dp" android:textColor="@color/middlegray" android:id="@+id/textView21"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录取平均分："/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zylu_varsocre"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500"
+                      android:layout_toRightOf="@+id/textView21" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@color/middlegray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

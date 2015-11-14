@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/relativeLayout2" android:background="@color/skyblue"
+                    android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@+id/imageView19" android:layout_width="wrap_content" android:layout_height="30.0dip"
+                   android:layout_marginLeft="8.0dip" android:src="@drawable/navreturnbtn"
+                   android:layout_centerVertical="true" android:onClick="dx_back"/>
+        <TextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@+id/textView20"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大学录取线"
+                  android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="150dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    >
+
+                <ImageView android:layout_width="fill_parent" android:layout_height="0.2dp"
+                           android:id="@+id/imageView17"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" android:layout_weight="0.25" android:gravity="center"
+                        android:id="@+id/layout_wenli">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                              android:textColor="#000000"
+                            android:text="生源地">
+                    </TextView>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_syd" android:layout_weight="1" android:layout_marginLeft="20dp"
+                            android:background="@color/white"/>
+                    <ImageView android:layout_width="30dp" android:layout_height="10dp"
+                               android:src="@drawable/next_icon" android:id="@+id/imageView12"
+                               android:longClickable="false"/>
+
+                </LinearLayout>
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DEDEDE"/>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="48dp"
+                              android:orientation="horizontal" android:paddingLeft="5dp" android:layout_weight="0.25"
+                              android:gravity="center" android:id="@+id/linearLayout6">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical" android:paddingLeft="5dp"
+                              android:textColor="#000000" android:text="文理科" />
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/et_wlk" android:layout_weight="1" android:layout_marginLeft="20dp"
+                              android:background="@color/white"/>
+                    <ImageView android:layout_width="30dp" android:layout_height="10dp"
+                               android:src="@drawable/next_icon" android:id="@+id/imageView16"
+                               android:longClickable="false"/>
+                </LinearLayout>
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DEDEDE"/>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="48dp"
+                              android:orientation="horizontal" android:paddingLeft="5dp" android:layout_weight="0.25"
+                              android:gravity="center" android:id="@+id/linearLayout8">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical" android:paddingLeft="5dp"
+                              android:textColor="#000000" android:text="院校名称" android:id="@+id/textView19"/>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/et_yxmc" android:layout_weight="1" android:layout_marginLeft="20dp"
+                              android:background="@color/white"/>
+                    <ImageView android:layout_width="30dp" android:layout_height="10dp"
+                               android:src="@drawable/next_icon" android:id="@+id/imageView18"
+                               android:longClickable="false"/>
+                </LinearLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#DEDEDE"
+                           android:id="@+id/imageView20"/>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/bt_tijiao"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/drawable_mainbtn_selector"
+
+                    android:text="搜索" android:onClick="sousuo"/>
+
+
+        </FrameLayout>
+        <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="#FFFFFF"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

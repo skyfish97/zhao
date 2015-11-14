@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="soft.zzti.edu.cn.ruxuebaodian"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="19"/>
+//19
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon74"
+                 android:theme="@style/Notitle_Fullscreen">
+        <activity android:name=".tab.FragmentMainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity android:name="soft.zzti.edu.cn.ruxuebaodian.login.LoginMyActivity"-->
+                  <!--android:theme="@style/Notitle_Fullscreen">-->
+R.id.R.id.
+        <!--</activity>-->
+
+
+        <!--<activity android:name=".login.PhoneActivity" android:theme="@style/Notitle_Fullscreen"/>-->
+        <!--<activity android:name=".login.register" android:theme="@style/Notitle_Fullscreen"/>-->
+        <activity android:name=".activity.RecommentSchoolListActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.ReconmentItemActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.ZhuanyeSelectActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.kaisheyuanxiaoActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.AboutGKBDActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.SchoolDetilActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.GaokaobaikeActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.GaokaobaokeitemActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.GaokaozixunActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.GaokaozixunitemActivity" android:theme="@style/Notitle_Fullscreen"/>
+       <activity android:name=".activity.ZhuanyepaimingActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.DaXueLuQuXianSelectActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.DaXueLuQuXiantActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.ZhuanYeLuQuXianSelectActivity" android:theme="@style/Notitle_Fullscreen"/>
+        <activity android:name=".activity.ZhuanYeLuQuXiantActivity" android:theme="@style/Notitle_Fullscreen"/>
+    </application>
+
+
+</manifest>

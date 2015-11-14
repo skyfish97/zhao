@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout android:id="@id/relative_top" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="58.5dip">
+        <TextView android:textSize="19.0sp" android:id="@+id/zhuanyepaiming_name" android:paddingBottom="3.0dip"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginRight="5.0dip" android:text="临床医学" android:layout_centerVertical="true"
+                  android:textColor="@color/skyblue"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relative_bottom" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:id="@+id/tv_taddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排行：" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zhuanyepaiming_paihang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="1" android:layout_toRightOf="@id/tv_taddress" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+                       >
+            <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:id="@+id/tv_tkenengxing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专业层次：" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/zhuanyepaiming_cengci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专科" android:layout_toRightOf="@id/tv_tkenengxing" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relative_second" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/middlegray" android:id="@+id/tv_tfengshu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报考人气：" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@+id/zhuanyepaiming_redu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="485992" android:layout_toRightOf="@id/tv_tfengshu"
+                      android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@color/middlegray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

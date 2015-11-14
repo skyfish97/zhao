@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/skyblue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/major_detail_fanhui" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/navreturnbtn" android:layout_centerVertical="true"
+                   android:onClick="ksyx_back"/>
+        <TextView android:textSize="19.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_zhuanye_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="专业名称" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/top_guide" />
+    <android.support.v4.view.ViewPager
+            android:id="@+id/guide_viewpage"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

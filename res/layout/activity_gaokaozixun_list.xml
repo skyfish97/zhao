@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android" tools:context=".RecommentSchoolListActivity"
+              xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout android:id="@id/ll_recommend_first" android:background="@color/skyblue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@+id/gaokaobaike_back" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/navreturnbtn" android:layout_centerVertical="true"
+                   android:onClick="gaokaozixun_back"/>
+        <TextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@+id/iv_recommended_tit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高考资讯" android:layout_centerInParent="true" />
+
+        <!--<Button android:textSize="16.0sp" android:textColor="@color/skyblue" android:gravity="center" android:id="@id/iv_recommended_filter" android:background="@drawable/btn_register" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:text="@string/recommend_filter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />-->
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_recommend_second" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_recommend_first">
+
+        <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+        <!--android:id="@+id/pull_refresh_list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
+        <!--<ListView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/recommend_listview" android:layout_gravity="center_horizontal"/>-->
+
+        <!--<com.example.autolistview.widget.AutoListView-->
+        <!--android:id="@+id/auto_refresh_list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
+        <soft.zzti.edu.cn.ruxuebaodian.autolistview.AutoListView
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:id="@+id/gaokaozixun_pull_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+
+</LinearLayout>

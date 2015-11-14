@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffbf8f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fg">
+    <RelativeLayout android:background="@color/skyblue" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/tv_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/main_imagetitle_height">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_banner" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/main_base" android:layout_width="320.0dip" android:layout_height="156dp" android:layout_marginTop="30.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip"
+                        >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/main_location" android:layout_centerVertical="true"
+                       android:id="@+id/imageView3"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:paddingLeft="45.0dip" android:layout_width="135.0dip" android:layout_height="wrap_content" android:text="@string/student_origin" android:layout_centerVertical="true"
+                      android:id="@+id/textView"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_shengyuandi" android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/textView" android:hint="      请输入省份" android:gravity="center_vertical"
+                    android:background="@color/white" android:layout_alignParentRight="true"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+        <ImageView android:background="@color/boxgray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/main_directions" android:layout_centerVertical="true"
+                       android:id="@+id/imageView4"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:paddingLeft="45.0dip" android:layout_width="135.0dip" android:layout_height="wrap_content" android:text="@string/students_type" android:layout_centerVertical="true"
+                      android:id="@+id/textView2"/>
+            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/et_wenlike"
+                      android:hint="      请输入文理科"
+                      android:gravity="center_vertical"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_toRightOf="@+id/textView2" android:layout_alignParentRight="true"
+                      android:background="@color/white" android:textColor="@color/black"/>
+        </RelativeLayout>
+        <ImageView android:background="@color/boxgray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip"
+                >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/main_score" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:paddingLeft="45.0dip" android:layout_width="135.0dip" android:layout_height="wrap_content" android:text="@string/score" android:layout_centerVertical="true"
+                      android:id="@+id/textView3"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            </LinearLayout>
+            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/et_fenshu" android:hint="      请输入分数"
+                      android:gravity="center_vertical"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentRight="true" android:layout_toRightOf="@+id/textView3"
+                      android:background="@color/white" android:textColor="@color/black"/>
+        </RelativeLayout>
+        <ImageView android:background="@color/boxgray" android:layout_width="fill_parent"
+                   android:layout_height="0.5dip" android:id="@+id/imageView5"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_btn_marginTop">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_recommend" android:background="@drawable/drawable_mainbtn_selector" android:layout_width="250.0dip" android:layout_height="48.0dip" android:text="@string/btn_goto_recommended"
+                android:clickable="true" android:onClick="recomment"/>
+    </LinearLayout>
+</LinearLayout>
